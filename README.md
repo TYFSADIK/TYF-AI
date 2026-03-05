@@ -93,7 +93,7 @@ Choose your platform and get running in **under 10 minutes**:
 
 ```bash
 # One-line installer
-curl -fsSL https://raw.githubusercontent.com/yourusername/tyf-ai/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/TYFSADIK/TYF-AI/main/install.sh | bash
 
 # Or manual installation (see below)
 ```
@@ -102,7 +102,7 @@ curl -fsSL https://raw.githubusercontent.com/yourusername/tyf-ai/main/install.sh
 
 ```bash
 # Optimized for M1/M2/M3 chips
-curl -fsSL https://raw.githubusercontent.com/yourusername/tyf-ai/main/install-macos.sh | bash
+curl -fsSL https://raw.githubusercontent.com/TYFSADIK/TYF-AI/main/install-macos.sh | bash
 
 # Or use Homebrew
 brew tap yourusername/tyf-ai
@@ -113,11 +113,28 @@ brew install tyf-ai
 
 ```powershell
 # Using PowerShell (Administrator)
-irm https://raw.githubusercontent.com/yourusername/tyf-ai/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/TYFSADIK/TYF-AI/main/install.ps1 | iex
 
 # Or use WSL2 for Linux experience
 wsl --install
 # Then follow Linux instructions
+```
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
+│   Cloudflare    │─────▶│   Caddy/Nginx   │─────▶│  Open WebUI     │
+│    Tunnel       │      │   (optional)    │      │  (custom image) │
+└─────────────────┘      └─────────────────┘      └────────┬────────┘
+                                    │                      │
+                                    ▼                      ▼
+                            ┌─────────────────┐      ┌─────────────────┐
+                            │   SearXNG       │      │  llama.cpp      │
+                            │  (web search)   │      │  (model server) │
+                            └─────────────────┘      └─────────────────┘
 ```
 
 ---
@@ -207,8 +224,8 @@ Upload research papers → Get summaries, extract key findings
 
 #### Linux/macOS
 ```bash
-git clone https://github.com/yourusername/tyf-ai.git
-cd tyf-ai
+git clone https://github.com/TYFSADIK/TYF-AI.git
+cd TYF-AI
 chmod +x install.sh
 ./install.sh
 ```
@@ -224,8 +241,8 @@ The installer will:
 #### Windows
 ```powershell
 # Run as Administrator
-git clone https://github.com/yourusername/tyf-ai.git
-cd tyf-ai
+git clone https://github.com/TYFSADIK/TYF-AI.git
+cd TYF-AI
 .\install.ps1
 ```
 
@@ -877,9 +894,9 @@ docker compose restart open-webui
 ### Getting Help
 
 - 📖 **Documentation**: Check this README thoroughly
-- 🐛 **Bug Reports**: Open an issue on GitHub
-- 💬 **Community**: Join our Discord server
-- 📧 **Email**: support@tyfsadik.org
+- 🐛 **Bug Reports**: [Open an issue on GitHub](https://github.com/TYFSADIK/TYF-AI/issues)
+- 🌐 **Website**: Visit [tyfsadik.org](https://tyfsadik.org)
+- 📧 **Email**: taki@tyfsadik.org
 
 ---
 
@@ -1010,8 +1027,8 @@ We welcome contributions! Here's how you can help:
 
 ```bash
 # Fork and clone
-git clone https://github.com/yourusername/tyf-ai.git
-cd tyf-ai
+git clone https://github.com/TYFSADIK/TYF-AI.git
+cd TYF-AI
 
 # Create feature branch
 git checkout -b feature/amazing-feature
@@ -1061,14 +1078,13 @@ Special thanks to:
 
 [![Website](https://img.shields.io/badge/Website-tyfsadik.org-blue?style=for-the-badge&logo=google-chrome)](https://tyfsadik.org)
 [![Demo](https://img.shields.io/badge/Live_Demo-ai.tyfsadik.org-green?style=for-the-badge&logo=ai)](https://ai.tyfsadik.org)
-[![GitHub](https://img.shields.io/badge/GitHub-tyf--ai-black?style=for-the-badge&logo=github)](https://github.com/yourusername/tyf-ai)
-[![Discord](https://img.shields.io/badge/Discord-Join_Us-7289da?style=for-the-badge&logo=discord)](https://discord.gg/yourinvite)
+[![GitHub](https://img.shields.io/badge/GitHub-tyf--ai-black?style=for-the-badge&logo=github)](https://github.com/TYFSADIK/TYF-AI)
 
 **Created by MD. Taki Yasir Faraji Sadik (Taki)**
 
+🌐 Website: [tyfsadik.org](https://tyfsadik.org)  
 📧 Email: taki@tyfsadik.org  
-🐦 Twitter: [@tyfsadik](https://twitter.com/tyfsadik)  
-💼 LinkedIn: [tyfsadik](https://linkedin.com/in/tyfsadik)
+💼 LinkedIn: [MD. Taki Yasir Faraji Sadik](https://www.linkedin.com/in/md-taki-yasir-faraji-sadik-63a026278/)
 
 </div>
 
@@ -1078,8 +1094,7 @@ Special thanks to:
 
 <div align="center">
 
-## Star History
-[![Star History Chart](https://api.star-history.com/image?repos=TYFSADIK/TYF-AI&type=date&legend=top-left)](https://www.star-history.com/?repos=TYFSADIK%2FTYF-AI&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=TYFSADIK/TYF-AI&type=Date)](https://star-history.com/#TYFSADIK/TYF-AI&Date)
 
 ### If TYF-AI helped you, please consider:
 
