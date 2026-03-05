@@ -1078,7 +1078,8 @@ Special thanks to:
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/tyf-ai&type=Date)](https://star-history.com/#yourusername/tyf-ai&Date)
+## Star History
+[![Star History Chart](https://api.star-history.com/image?repos=TYF-AI/TYF-AI&type=date&legend=top-left)](https://www.star-history.com/?repos=TYF-AI%2FTYF-AI&type=date&legend=top-left)
 
 ### If TYF-AI helped you, please consider:
 
